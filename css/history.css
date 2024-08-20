@@ -1,0 +1,136 @@
+@font-face {
+    font-family: aptech;
+    src: url(/fonts/NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: aptech;
+    font-weight: 100;
+    src: url(/fonts/NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-family: aptech;
+    font-weight: 200;
+    src: url(/fonts/NeueHaasDisplayRoman.ttf);
+}
+
+
+
+*{
+    font-family: "aptech";
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+html , body{
+    height: 100%;
+    width: 100%;
+  
+}
+
+.page3{
+    min-height: 100VH;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 2vw 2vw;
+        display: flex;
+        flex-direction: column ;
+        font-family: "Font Awesome 5 Free";
+    
+    }  
+    .img-heading{
+        grid-column-gap: 0.5vw;
+        grid-row-gap: 0.5vw;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2.3vw;
+        padding-bottom: 1.2vw;
+        display: flex;
+        
+    }
+    
+    .img-heading .gola{
+        width: 0.5vw;
+        height: 0.5vw;
+        border-radius: 50%;
+        background-color: #FE3B0D;
+    }
+    .img-heading .heading h3{
+        /* font-size: 1.5vw;
+        font-family: "zainu"; */
+        font-weight: 200;
+        margin: 0;
+        
+        
+     }
+     
+    
+    .image-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    .image-div{
+        height: 350px;
+        width: 29.5vw;
+        background-color: #FE3B0D;
+        position: relative;
+        overflow: hidden;
+        margin: 1vw;
+    }
+    .image-div img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all ease 0.5s;
+       
+    }
+    .overlay{
+        height: 100%;
+        width: 100%;
+        /* background-color: #00000000; */
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all ease 0.5s;
+        padding: 20px;
+        z-index: 9;
+    }
+    .overlay p {
+        /* font-size: 1.2vw; */
+        /* text-transform: uppercase; */
+        text-align: center;
+        color: white;
+        line-height: 2.5vw;
+        opacity: 0;
+        margin-top: 25px;
+        transition: all ease 0.5s;
+        transition-delay:0.2s ;
+        cursor: pointer;
+        display: block;
+    }
+ 
+    
+    .image-div:hover {
+        scale: 1.0;
+    
+    }
+    .image-div:hover img{
+        scale: 1.1;
+    
+    }
+    .image-div:hover .overlay{
+        background-color: #000;
+    
+    }
+    .image-div:hover .overlay p{
+        opacity: 1;
+    
+    }
+ 
